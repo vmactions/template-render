@@ -14,7 +14,7 @@ async function renderFile(tpl, outfile, datafile) {
         console.log(matches[m][0]);
         let match = matches[m][0]
         let name = matches[m][1];
-        let value = undefined;
+        let value = "";
 
         if (name in config) {
             value = config[name];
